@@ -1,4 +1,4 @@
-# InvestiGut
+# InvestiGUT
 
 ## Instructions
 1. Clone the repository.  
@@ -15,7 +15,7 @@
 Add to .bashrc: `export PATH="/PATH/TO/InvestiGut:$PATH"`  
 Enter in terminal: `source ~/.bashrc`
 Reactivate the conda environment: `conda activate investigut`
-8. Run InvestiGut on chosen proteins.  
+8. Run InvestiGUT on chosen proteins.  
 Basic usage: `investigut.py -i /PATH/TO/FASTA/FILE`
   
 Options list:
