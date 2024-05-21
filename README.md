@@ -43,7 +43,6 @@ investigut.py -i /PATH/TO/FASTA/FILE
   
 Options list:
 
-Any arguments not recognized by InvesitGut will be passed on to DIAMOND (e.g., `--threads`, `--faster`, `--ultra-sensitive`).
 ```
 -h, --help            show this help message and exit
 -i {INPUT}            input fasta file
@@ -58,6 +57,8 @@ Any arguments not recognized by InvesitGut will be passed on to DIAMOND (e.g., `
 --low                 overrides default DIAMOND query/sujbect coverage and %id giving all a
                       value of 50
 ```
+In addition to the above, any arguments not recognized by InvesitGut will be passed on to DIAMOND (e.g., `--threads`, `--faster`, `--ultra-sensitive`).
+
 ## Example Usage
 
 In the example folder, a file called "seaweed.fa" contains two bacterial proteins, Bp1670 and Bp1689, that are involved in seaweed digestion (taken from https://www.nature.com/articles/nature08937). In multi mode (`-m`), metagenomes and metagenome-assembled-genomes (MAGs) containing all proteins in the fasta file are counted as positive, whereas in single mode (`-s`), metagenomes and MAGs are separately examined for each protein sequence. The following command searches for matches to both proteins (`-m`) using a subject/query-coverage of 50% and a percetage identity threshhold of 50% (`--low`). 
